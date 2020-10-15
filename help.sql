@@ -440,7 +440,7 @@ CREATE TABLE `userinfo` (
   `state` int(1) NOT NULL DEFAULT '0' COMMENT '0.审核中  1.已通过  2.不通过',
   `msg` varchar(100) DEFAULT NULL COMMENT '不通过 原因',
   `stu_card` varchar(100) DEFAULT NULL COMMENT '学生证照片',
-  `form_id` varchar(30) DEFAULT NULL,
+  `form_id` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `card_num` (`card_num`),
   KEY `wx_id` (`wx_id`)
